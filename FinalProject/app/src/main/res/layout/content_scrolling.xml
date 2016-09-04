@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bubbl.myapplication.ScrollingActivity"
+    tools:showIn="@layout/fragment_item_detail">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/backgroundsmall2"
+        android:scaleType = "centerCrop">
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="150dp"
+            android:layout_height="222dp"
+            android:id="@+id/moviePic"
+            android:src="@drawable/usericon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp" >
+
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seller"
+            android:layout_toRightOf="@id/moviePic"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/titleDirector"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sam Raimi"
+            android:layout_marginRight="10dp"
+            android:id="@+id/textDirector"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/titleDirector"
+            android:textColor="@color/Second_white"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release Time"
+            android:layout_toRightOf="@id/moviePic"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/titleYear"
+            android:layout_below="@id/textDirector"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2002"
+            android:layout_marginRight="10dp"
+            android:id="@+id/textYear"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/titleYear"
+            android:textColor="@color/Second_white"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:layout_toRightOf="@id/moviePic"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/titleStar"
+            android:layout_below="@id/textYear"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On Sale"
+            android:id="@+id/textStar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/titleStar"
+            android:textColor="@color/Second_white"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_toRightOf="@id/moviePic"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/titleRate"
+            android:layout_below="@id/textStar"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(7.9)"
+            android:layout_below="@id/titleRate"
+            android:layout_marginRight="10dp"
+            android:id="@+id/textRate"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/Second_white"
+            android:textSize="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_below="@id/moviePic"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/titleDescription"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family."
+            android:id="@+id/textDescription"
+            android:layout_below="@id/titleDescription"
+            android:textColor="@color/Second_white"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="16dp"/>
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_below="@id/textDescription"
+            android:textColor="@color/second_white"
+            android:text="@string/large_text" />-->
+    </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

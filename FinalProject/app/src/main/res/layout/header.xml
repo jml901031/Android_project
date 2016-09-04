@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="25dp"
+    android:background="@drawable/background">
+
+<com.github.siyamed.shapeimageview.CircularImageView
+    android:id="@+id/UserLogoImageView"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/userdefault1"
+    app:siBorderWidth="0dp"
+    android:scaleType="fitXY"
+    app:siBorderColor="#99FFFFFF"
+    app:siBorderType="stroke"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Please Log In"
+    android:textSize="20dp"
+    android:layout_below="@id/UserLogoImageView"
+    android:textColor="@color/white"
+    android:layout_marginLeft="10dp"
+    android:textStyle="bold"
+    android:id="@+id/UserNameTextView"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:layout_below="@+id/UserNameTextView"
+    android:layout_marginLeft="10dp"
+    android:textColor="@color/white"
+    android:id="@+id/EmailTextView"/>
+
+
+</RelativeLayout>

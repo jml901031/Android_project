@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    tools:context="com.example.derek.finalproject.UserProfile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+       >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:id="@+id/NameLabel" />
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:inputType="textLongMessage"
+                android:layout_below="@id/NameLabel"
+                android:id="@+id/NameEditText"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:id="@+id/EmailLabel"/>
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_below="@id/EmailLabel"
+                android:id="@+id/EmailEditText"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:id="@+id/PhoneNumText"/>
+            <EditText
+                android:layout_width="230dp"
+
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_below="@id/PhoneNumText"
+
+                android:id="@+id/PhoneNumEditText"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address Line1"
+                android:id="@+id/AddressLineText1"/>
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:inputType="textLongMessage"
+                android:layout_below="@id/AddressLineText1"
+                android:id="@+id/AddressLineEditText1"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address Line2"
+                android:id="@+id/AddressLineText2"/>
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:inputType="textLongMessage"
+                android:layout_below="@id/AddressLineText2"
+                android:id="@+id/AddressLineEditText2"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:layout_marginTop="13dp"
+                android:id="@+id/StateTextView"/>
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/StatePicker"
+                android:entries="@array/country_arrays"
+                android:layout_toRightOf="@+id/StateTextView"
+                android:prompt="@string/Promt">
+            </Spinner>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avatar"
+                android:layout_alignTop="@+id/StateTextView"
+                android:layout_toEndOf="@+id/StatePicker"
+                android:id="@+id/avatartx"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/usericon"
+                android:layout_alignTop="@+id/avatartx"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:id="@+id/AvatarImageView"/>
+
+        </RelativeLayout>
+
+
+        <com.dd.processbutton.iml.GenerateProcessButton
+            android:id="@+id/UpdateButton"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:pb_textComplete="Done"
+            app:pb_textProgress="Updating"
+            app:pb_colorNormal="@color/red"
+            app:pb_colorComplete="@color/red"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>

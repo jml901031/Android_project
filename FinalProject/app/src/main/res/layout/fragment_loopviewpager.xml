@@ -1,0 +1,331 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@color/c4">
+
+    <com.example.derek.finalproject.loopViewPager.LoopViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="110dp"
+        app:ci_width="10dp"
+        app:ci_height="4dp"
+        app:ci_margin="6dp"
+        app:ci_animator="@animator/indicator_animator"
+        app:ci_animator_reverse="@animator/indicator_animator_reverse"
+        app:ci_drawable="@drawable/black_radius_square"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="148dp"
+
+            android:columnCount="3"
+            android:rowCount="3"
+            android:background="@color/c4">
+
+            <LinearLayout
+                android:layout_height="117dp"
+                android:layout_width="117dp"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:background="@color/c4">
+
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:id="@+id/bookImageButton"
+                    android:layout_gravity="center"
+                    android:src="@drawable/book_color"
+                    app:siBorderColor="#99FFFFFF"
+                    app:siBorderType="stroke"
+                    app:siBorderWidth="4dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c4"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="117dp"
+                android:layout_width="117dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+
+                android:orientation="vertical"
+                android:background="@color/c4">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/computer_color"
+                    android:id="@+id/ElectronicImageButton"
+                    app:siBorderColor="#99FFFFFF"
+                    app:siBorderType="stroke"
+                    app:siBorderWidth="4dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electronic"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c4"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="117dp"
+                android:layout_width="117dp"
+                android:layout_marginLeft="3dp"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:background="@color/c4">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/cd_color"
+                    android:id="@+id/AlbumImageButton"
+                    app:siBorderColor="#99FFFFFF"
+                    app:siBorderType="stroke"
+                    app:siBorderWidth="4dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Album"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c4"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="117dp"
+                android:layout_width="117dp"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:background="@color/c4">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/home_color"
+                    android:id="@+id/HomeImageButton"
+                    app:siBorderColor="#99FFFFFF"
+                    app:siBorderType="stroke"
+                    app:siBorderWidth="4dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c4"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="117dp"
+                android:layout_width="117dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+
+                android:orientation="vertical"
+                android:background="@color/c4">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/forniture_color"
+                    android:id="@+id/FurnitureImageButton"
+                    app:siBorderColor="#99FFFFFF"
+                    app:siBorderType="stroke"
+                    app:siBorderWidth="4dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Furniture"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c4"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="117dp"
+                android:layout_width="117dp"
+                android:layout_marginLeft="3dp"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:background="@color/c4">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/pet_color"
+                    android:id="@+id/PetImageButton"
+                    app:siBorderColor="#99FFFFFF"
+                    app:siBorderType="stroke"
+                    app:siBorderWidth="4dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pet"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c4"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="117dp"
+                android:layout_width="117dp"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:background="@color/c4">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/game_color"
+                    android:id="@+id/VideoGameImageButton"
+                    app:siBorderColor="#99FFFFFF"
+                    app:siBorderType="stroke"
+                    app:siBorderWidth="4dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Video Game"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c4"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="117dp"
+                android:layout_width="117dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+
+                android:orientation="vertical"
+                android:background="@color/c4">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/tv_color"
+                    android:id="@+id/TvImageButton"
+                    app:siBorderColor="#99FFFFFF"
+                    app:siBorderType="stroke"
+                    app:siBorderWidth="4dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tv Video"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c4"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="117dp"
+                android:layout_width="117dp"
+                android:layout_marginLeft="3dp"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:background="@color/c4">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:src="@drawable/outdoor_color"
+                    android:id="@+id/OutdoorImageButton"
+
+                    app:siBorderColor="#99FFFFFF"
+                    app:siBorderType="stroke"
+                    app:siBorderWidth="4dp"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outdoor"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/c4"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+
+
+        </GridLayout>
+
+
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ProfileItem"
+            android:checked="false"
+            android:title="Profile"
+            android:icon="@drawable/accounticon"
+            />
+
+        <item
+            android:id="@+id/FavoriteItem"
+            android:checked="false"
+            android:title="Favorite"
+            android:icon="@drawable/favoriteicon"
+
+            />
+        <item
+            android:id="@+id/HistoryItem"
+            android:checked="false"
+            android:title="Log out"
+            android:icon="@drawable/historyicon"
+            />
+    </group>
+</menu>
